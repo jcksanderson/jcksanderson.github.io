@@ -47,14 +47,17 @@ rss_icon: true
 
 navbar_fixed: true
 footer_fixed: false
-search_enabled: true
+search_enabled: false
 socials_in_search: true
 bib_search: true
 
 # Dimensions
-max_width: 930px
+max_width: 1200px
 
-# TODO: add layout settings (single page vs. multi-page)
+
+# Socials
+github: jcksanderson
+linkedin_username: jack-sanderson-78533a316
 
 # -----------------------------------------------------------------------------
 # Open Graph & Schema.org
