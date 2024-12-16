@@ -25,12 +25,8 @@
       "startDate": "2024-06-10",
       "endDate": "2024-08-02",
       "highlights": [
-        "Fine-tuned multiple transformer-based large language models for 
-        summarization of convoluted and lengthy (1500+ word) legal documents 
-        pertaining to the finances of large international banks.",
-        "Created multiple bespoke models capable of creating summaries of 
-        documents with 90% of relevant information at 10% of the original
-        length."
+        "Fine-tuned multiple transformer-based large language models for summarization of convoluted and lengthy (1500+ word) legal documents pertaining to the finances of large international banks.",
+        "Created multiple bespoke models capable of creating summaries of documents with 90% of relevant information at 10% of the original length."
       ]
     },
     {
@@ -40,11 +36,8 @@
       "startDate": "2014-10-16",
       "endDate": "2015-12-04",
       "highlights": [
-        "Explored challenges in AI alignment, analyzing solutions to address
-        deceptive behavior in AI systems.", 
-        "Investigated security vulnerabilities in large language models, 
-        focusing on adversarial examples and techniques such as RLHF to mitigate 
-        AI exploitation.""
+        "Explored challenges in AI alignment, analyzing solutions to address deceptive behavior in AI systems.", 
+        "Investigated security vulnerabilities in large language models, focusing on adversarial examples and techniques such as RLHF to mitigate AI exploitation."
       ]
     }
   ],
@@ -52,10 +45,8 @@
     {
       "name": "UChicago Crime Map",
       "highlights": [
-        "Utilized Python and R to web scrape, clean, geocode, and map over 1000 
-        UChicago-area crimes from the UChicago Police Department’s website.", 
-        "Deployed map as a website to serve as a safety resource for the student 
-        body (uchicago-crime.github.io/map)."
+        "Utilized Python and R to web scrape, clean, geocode, and map over 1000 UChicago-area crimes from the UChicago Police Department’s website.", 
+        "Deployed map as a website to serve as a safety resource for the student body (uchicago-crime.github.io/map)."
       ],
       "startDate": "2023-12-15",
       "endDate": "2023-12-30",
@@ -64,9 +55,7 @@
     {
       "name": "Python Implementation of Go",
       "highlights": [
-        "Developed a playable GO game in a tema of four students, including the
-        game logic, a GUI, a terminal-based interface, an alogithmic game-
-        playing bot, and tests.",
+        "Developed a playable GO game in a tema of four students, including the game logic, a GUI, a terminal-based interface, an alogithmic game-playing bot, and tests.",
         "Code available upon request."
       ],
       "startDate": "2024-02-15",
@@ -75,10 +64,8 @@
     {
       "name": "Custom Shell with File Compressor",
       "highlights": [
-        "Developed a Unix-based shell supporting built-in commands, I/O 
-        redirection, and advanced I/O inserting.",
-        "Included a LZW file compressor with pruning to allow for more efficient
-        compression, capable of compressing files up to 50%.",
+        "Developed a Unix-based shell supporting built-in commands, I/O redirection, and advanced I/O inserting.",
+        "Included a LZW file compressor with pruning to allow for more efficient compression, capable of compressing files up to 50%.",
         "Code available upon request."
       ],
       "startDate": "2024-10-25",
