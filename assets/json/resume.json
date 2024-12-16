@@ -1,110 +1,110 @@
 {
   "basics": {
-    "name": "John Doe",
-    "label": "Programmer",
+    "name": "Jack Sanderson",
+    "label": "Undergraduate Student",
     "image": "",
-    "email": "john@gmail.com",
-    "phone": "(912) 555-4321",
-    "url": "https://johndoe.com",
-    "summary": "A summary of John Doe…",
-    "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
-    },
-    "profiles": [{
-      "network": "Twitter",
-      "username": "john",
-      "url": "https://twitter.com/john"
-    }]
+    "email": "jacksanderson@uchicago.edu",
+    "url": "https://jcksanderson.github.io",
   },
-  "work": [{
-    "name": "Company",
-    "position": "President",
-    "url": "https://company.com",
-    "startDate": "2013-01-01",
-    "endDate": "2014-01-01",
-    "summary": "Description…",
-    "highlights": [
-      "Started the company"
-    ]
-  }],
-  "volunteer": [{
-    "organization": "Organization",
-    "position": "Volunteer",
-    "url": "https://organization.com/",
-    "startDate": "2012-01-01",
-    "endDate": "2013-01-01",
-    "summary": "Description…",
-    "highlights": [
-      "Awarded 'Volunteer of the Month'"
-    ]
-  }],
-  "education": [{
-    "institution": "University",
-    "url": "https://institution.com/",
-    "area": "Software Development",
-    "studyType": "Bachelor",
-    "startDate": "2011-01-01",
-    "endDate": "2013-01-01",
-    "score": "4.0",
-    "courses": [
-      "DB1101 - Basic SQL"
-    ]
-  }],
-  "awards": [{
-    "title": "Award",
-    "date": "2014-11-01",
-    "awarder": "Company",
-    "summary": "There is no spoon."
-  }],
-  "certificates": [{
-    "name": "Certificate",
-    "date": "2021-11-07",
-    "issuer": "Company",
-    "url": "https://certificate.com"
-  }],
-  "publications": [{
-    "name": "Publication",
-    "publisher": "Company",
-    "releaseDate": "2014-10-01",
-    "url": "https://publication.com",
-    "summary": "Description…"
-  }],
-  "skills": [{
-    "name": "Web Development",
-    "level": "Master",
-    "keywords": [
-      "HTML",
-      "CSS",
-      "JavaScript"
-    ]
-  }],
-  "languages": [{
-    "language": "English",
-    "fluency": "Native speaker"
-  }],
-  "interests": [{
-    "name": "Wildlife",
-    "keywords": [
-      "Ferrets",
-      "Unicorns"
-    ]
-  }],
-  "references": [{
-    "name": "Jane Doe",
-    "reference": "Reference…"
-  }],
-  "projects": [{
-    "name": "Project",
-    "startDate": "2019-01-01",
-    "endDate": "2021-01-01",
-    "description": "Description...",
-    "highlights": [
-      "Won award at AIHacks 2016"
-    ],
-    "url": "https://project.com/"
-  }]
+  "work": [
+    {
+      "name": "UChicago Data Science Institute",
+      "location": "Chicago, Illinois",
+      "position": "Research Assistant",
+      "startDate": "2024-06-10",
+      "endDate": "2024-08-02",
+      "highlights": [
+        "Fine-tuned multiple transformer-based large language models for summarization of convoluted and lengthy (1500+ word) legal documents pertaining to the finances of large international banks.",
+        "Created multiple bespoke models capable of creating summaries of documents with 90% of relevant information at 10% of the original length."
+      ]
+    },
+    {
+      "organization": "UChicago AI Safety Group",
+      "location": "Chicago, Illinois",
+      "position": "Research Fellow",
+      "startDate": "2014-10-16",
+      "endDate": "2015-12-04",
+      "highlights": [
+        "Explored challenges in AI alignment, analyzing solutions to address deceptive behavior in AI systems.", 
+        "Investigated security vulnerabilities in large language models, focusing on adversarial examples and techniques such as RLHF to mitigate AI exploitation."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Chicago",
+      "location": "Chicago, Illinois",
+      "area": "Computer Science, Statistics",
+      "studyType": "Bachelors of Arts",
+      "startDate": "2024-09-28",
+      "endDate": "2027-05-30",
+      "score": "10",
+    }
+  ],
+  "skills": [
+    {
+      "name": "Computer Science",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "Python",
+        "pytest",
+        "numpy",
+        "pandas",
+        "scikit-learn",
+        "pytorch",
+        "transformers",
+        "C",
+        "gdb",
+        "make",
+        "R",
+        "tidyverse",
+        "sf",
+        "leaflet",
+        "Linux Command Line",
+        "Git"
+      ]
+    }
+  ],
+  "interests": [
+    {
+      "name": "Machine Learning",
+      "icon": "fa-solid fa-tag",
+      "keywords": [
+        "Adversarial Machine Learning",
+        "Large Language Models",
+        "AI Safety"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "UChicago Crime Map",
+      "highlights": [
+        "Utilized Python and R to web scrape, clean, geocode, and map over 1000 UChicago-area crimes from the UChicago Police Department’s website.", 
+        "Deployed map as a website to serve as a safety resource for the student body (uchicago-crime.github.io/map)."
+      ],
+      "startDate": "2023-12-15",
+      "endDate": "2023-12-30",
+      "url": "uchicago-crime.github.io/map"
+    },
+    {
+      "name": "Python Implementation of Go",
+      "highlights": [
+        "Developed a playable GO game in a tema of four students, including the game logic, a GUI, a terminal-based interface, an alogithmic game-playing bot, and tests.",
+        "Code available upon request."
+      ],
+      "startDate": "2024-02-15",
+      "endDate": "2024-03-15"
+    },
+    {
+      "name": "Custom Shell with File Compressor",
+      "highlights": [
+        "Developed a Unix-based shell supporting built-in commands, I/O redirection, and advanced I/O inserting.",
+        "Included a LZW file compressor with pruning to allow for more efficient compression, capable of compressing files up to 50%.",
+        "Code available upon request."
+      ],
+      "startDate": "2024-10-25",
+      "endDate": "2024-12-11",
+    }
+  ],
 }
