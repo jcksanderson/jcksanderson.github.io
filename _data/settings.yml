@@ -2,7 +2,7 @@ menu:
 - {name: 'about', url: '/about'}
 - {name: 'publications', url: '/publications'}
 - {name: 'courses', url: '/courses'}
-- {name: 'cv', url: '/cv'}
+- {name: 'cv', url: '/assets/cv.pdf'}
 - {name: 'contact', url: '/contact'}
 
 people:
@@ -14,11 +14,8 @@ courses:
 - {name: 'Vector Calculus', url: 'vector-calculus'}
 
 social:
-- {icon: 'github', link: 'https://github.com/LeNPaul'}
-- {icon: 'twitter', link: 'https://twitter.com/paululele'}
-- {icon: 'instagram', link: 'https://instagram.com/paululele'}
-- {icon: 'linkedin', link: 'https://linkedin.com/in/lenpaul'}
+- {icon: 'github', link: 'https://github.com/jcksanderson'}
+- {icon: 'linkedin', link: 'https://www.linkedin.com/in/jcksanderson'}
 
 contacts:
-- {name: 'Jack Sanderson', title: 'Undergraduate', department: 'Computer Science & Statistics', institution: 'University of Chicago', image: 'assets/img/contact.jpg'}
-# - {name: 'Jack Sanderson', title: 'Undergraduate', department: 'Computer Science & Statistics', institution: 'University of Chicago', institution_address: '1 Main Street, Canada', phone: '', email: 'jacksanderson@uchicago.edu', office: 'Science Building 505', image: 'assets/img/contact.jpg'}
+- {name: 'Jack Sanderson', title: 'Undergraduate Student', department: 'Computer Science & Statistics', institution: 'University of Chicago', image: 'assets/img/contact.jpg'}
