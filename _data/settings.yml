@@ -1,5 +1,5 @@
 menu:
-- {name: 'people', url: '/people'}
+- {name: 'about', url: '/about'}
 - {name: 'publications', url: '/publications'}
 - {name: 'courses', url: '/courses'}
 - {name: 'cv', url: '/cv'}
@@ -12,8 +12,6 @@ people:
 
 courses:
 - {name: 'Vector Calculus', url: 'vector-calculus'}
-- {name: 'Quantum Mechanics', url: 'quantum-mechanics'}
-- {name: 'Stellar Structures', url: 'stellar-structures'}
 
 social:
 - {icon: 'github', link: 'https://github.com/LeNPaul'}
@@ -22,4 +20,5 @@ social:
 - {icon: 'linkedin', link: 'https://linkedin.com/in/lenpaul'}
 
 contacts:
-- {name: 'Dr. Academia', title: 'Professor', department: 'Physics & Astronomy', institution: 'Some University', institution_address: '1 Main Street, Canada', phone: '(000) 000-0000', email: 'hello@university.edu', office: 'Science Building 505', image: 'assets/img/contact.jpg'}
+- {name: 'Jack Sanderson', title: 'Undergraduate', department: 'Computer Science & Statistics', institution: 'University of Chicago', image: 'assets/img/contact.jpg'}
+# - {name: 'Jack Sanderson', title: 'Undergraduate', department: 'Computer Science & Statistics', institution: 'University of Chicago', institution_address: '1 Main Street, Canada', phone: '', email: 'jacksanderson@uchicago.edu', office: 'Science Building 505', image: 'assets/img/contact.jpg'}
