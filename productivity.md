@@ -3,7 +3,7 @@ layout: productivity
 title: "productivity"
 ---
 
-I am trying me best this summer to become more productive. I'm not a
+I am trying my best this summer to become more productive. I'm not a
 serial doomscroller or anything, but I like small, incremental self-improvement.
 I figure I'm going to start keeping a timeline of my systems and routines to
 see how things change over time (some of this will be backfilled; I'm starting
