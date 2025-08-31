@@ -10,7 +10,10 @@ This site is ever evolving (about once per month). Here are some facts about me:
 
 If you have a fun fact you'd like me to claim is a fun fact about me, shoot me an email!
 
-<details>
-    dropdown test
-</details>
 
+<details>
+  <summary>Click here to open a dropdown</summary>
+   
+You're now in a dropdown.
+
+</details>
