@@ -15,7 +15,6 @@ If you have a fun fact you'd like me to put here, shoot me an email!
 - Statistics 102  
 - History
 {% endcapture %}
-
 {% include collapsible.html title="Current Courses" content=current_courses %}
 
 {% capture past_courses %}
@@ -23,5 +22,4 @@ If you have a fun fact you'd like me to put here, shoot me an email!
 - Statistics 101  
 - English
 {% endcapture %}
-
 {% include collapsible.html title="Past Courses" content=past_courses %}
