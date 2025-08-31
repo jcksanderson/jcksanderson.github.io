@@ -16,9 +16,7 @@ If you have a fun fact you'd like me to claim is a fun fact about me, shoot me a
     font-size: 1.2em;        /* bigger than normal text */
     font-weight: bold;
     cursor: pointer;
-    margin: 0.5em 0;
     transition: background-color 0.3s ease;
-    padding: 0.2em;
   }
   .collapsible:hover {
     background-color: #f0f0f0; /* subtle fade on hover */
@@ -26,7 +24,6 @@ If you have a fun fact you'd like me to claim is a fun fact about me, shoot me a
   .collapsible-content {
     display: none;
     margin-left: 1em;
-    padding: 0.5em 0;
   }
 </style>
 
