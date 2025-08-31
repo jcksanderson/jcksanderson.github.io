@@ -8,18 +8,18 @@ This site is ever evolving (about once per month). Here are some facts about me:
 - I play the ukulele
 - I'm an avid neovim user
 
-If you have a fun fact you'd like me to claim is a fun fact about me, shoot me an email!
+If you have a fun fact you'd like me to put here, shoot me an email!
 
 
 <style>
   .collapsible {
-    font-size: 1.2em;        /* bigger than normal text */
-    font-weight: bold;
+    font-size: 1.1em;
+    font-weight: semibold;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
   .collapsible:hover {
-    background-color: #f0f0f0; /* subtle fade on hover */
+    background-color: #f0f0f0;
   }
   .collapsible-content {
     display: none;
