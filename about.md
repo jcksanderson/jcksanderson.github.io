@@ -10,14 +10,18 @@ This site is ever evolving (about once per month). Here are some facts about me:
 
 If you have a fun fact you'd like me to put here, shoot me an email!
 
-{% include collapsible.html title="Current Courses" %}
-- Coding 101
-- Statistics 102
+{% capture current_courses %}
+- Coding 101  
+- Statistics 102  
 - History
-{% endinclude %}
+{% endcapture %}
 
-{% include collapsible.html title="Past Courses" %}
-- Coding 100
-- Statistics 101
+{% include collapsible.html title="Current Courses" content=current_courses %}
+
+{% capture past_courses %}
+- Coding 100  
+- Statistics 101  
 - English
-{% endinclude %}
+{% endcapture %}
+
+{% include collapsible.html title="Past Courses" content=past_courses %}
