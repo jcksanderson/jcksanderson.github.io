@@ -36,6 +36,13 @@ Coding 101, Statistics 102, and History
 
 </div>
 
+<div class="collapsible">Past Courses</div>
+<div class="collapsible-content">
+
+Coding 100, Statistics 101, and English
+
+</div>
+
 <script>
 document.querySelectorAll(".collapsible").forEach(el => {
   el.addEventListener("click", () => {
