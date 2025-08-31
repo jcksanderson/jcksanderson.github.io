@@ -14,7 +14,7 @@ If you have a fun fact you'd like me to put here, shoot me an email!
 <style>
   .collapsible {
     font-size: 1.1em;
-    font-weight: semibold;
+    font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
