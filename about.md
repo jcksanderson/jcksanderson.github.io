@@ -23,8 +23,8 @@ If you have a fun fact you'd like me to put here, shoot me an email!
   }
   .collapsible-content {
     display: none;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin-top: 0.35em;
+    margin-bottom: 0.35em;
     /* margin-left: 1em; */
   }
 </style>
