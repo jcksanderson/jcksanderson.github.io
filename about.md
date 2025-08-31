@@ -1,6 +1,6 @@
 ---
 layout: about
-title: "About"
+title: "about"
 ---
 
 This site is ever evolving (about once per month). Here are some facts about me:
