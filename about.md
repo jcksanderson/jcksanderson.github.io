@@ -30,18 +30,7 @@ If you have a fun fact you'd like me to put here, shoot me an email!
 <div class="collapsible">Current Courses</div>
 <div class="collapsible-content">
 
-  <div class="collapsible">Linear Algebra Math 56 Fall 2025</div>
-  <div class="collapsible-content">
-    
-  <div class="collapsible">Overview</div>
-  <div class="collapsible-content">
-  
-Welcome to Math 56! This is a relatively new course here at Berkeley, and I'm excited for you to be part of it.  
-You can still use **Markdown** inside these blocks.
-
-  </div>
-
-  </div>
+Coding 101, Statistics 102, and History
 
 </div>
 
