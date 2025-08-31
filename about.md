@@ -14,7 +14,7 @@ If you have a fun fact you'd like me to put here, shoot me an email!
 <style>
   .collapsible {
     font-size: 1.1em;
-    font-weight: 485;
+    font-weight: 495;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
@@ -23,7 +23,9 @@ If you have a fun fact you'd like me to put here, shoot me an email!
   }
   .collapsible-content {
     display: none;
-    margin-left: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    /* margin-left: 1em; */
   }
 </style>
 
