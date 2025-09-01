@@ -4,10 +4,26 @@ layout: default
 
 <div class="row g-5 mb-5">
   <div class="col-md-12">
-    <h3 class="fw-bold pb-0 mb-0">{{ page.title }}</h3>
+    <h3 class="fw-bold title-underline">{{ page.title }}</h3>
     {{ content }}
   </div>
 </div>
+
+<style>
+.title-underline {
+  display: inline-block;      /* shrink-wrap to text width */
+  border-bottom: 2px solid #000; /* or your preferred color */
+  padding-bottom: 0.2em;      /* spacing between text and line */
+  margin-bottom: 1.5rem;      /* space below heading */
+}
+</style>
+
+<!-- <div class="row g-5 mb-5">
+  <div class="col-md-12">
+    <h3 class="fw-bold pb-0 mb-0">{{ page.title }}</h3>
+    {{ content }}
+  </div>
+</div> -->
 
 <!-- <div class="row g-5 mb-5">
   <div class="col-md-12">
