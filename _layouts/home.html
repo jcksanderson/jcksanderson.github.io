@@ -17,7 +17,20 @@ layout: default
   </div>
 </div>
 
-{% include publications.html %}
+<div class="row g-5 mb-5">
+  <div>
+    <h5 class="fw-bold">publications</h5>
+    {% if page.title == "Home" %}
+      {% for item in site.data.publications.featured %}
+        <p><a href="{{ item.url }}">{{ item.name }}</a></p>
+      {% endfor %}
+    {% else %}
+      {% for item in site.data.publications.index %}
+        <p><a href="{{ item.url }}">{{ item.name }}</a></p>
+      {% endfor %}
+    {% endif %}
+  </div>
+</div>
 
 <div class="row g-5 mb-5">
   <div class="col-md-12">
