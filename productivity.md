@@ -34,7 +34,7 @@ This was because I was sick of using the trackpad to move between spaces.
 It was still a bit too slow for me, which is why I've since switched to FlashSpace.
 
 {% endcapture %}
-{% include collapsible.html title="Mapping `Ctrl + H/L` to Mac Spaces Navigation (June 2025)" content=spacesnav %}
+{% include collapsible.html title="Mapping Ctrl + H/L to Mac Spaces Navigation (June 2025)" content=spacesnav %}
 
 
 {% capture screenzen %}
