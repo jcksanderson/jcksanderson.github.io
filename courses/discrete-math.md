@@ -1,10 +1,8 @@
 ---
 layout: page
-title: "Discrete Math"
+title: "discrete math"
 ---
 
-Discrete math at UChicago (CMSC 27100) was the first proof-based class I took.
-It definitely was very new at first, so I compiled my notes in an effort to
-review.
+There's nothing extra here. It's mostly just so I remember how these separate pages work. Here are my notes again:
 
 [Discrete Notes](/courses/discrete-math/discrete-notes.pdf)

@@ -10,6 +10,7 @@ It definitely was very new at first, so I compiled my notes in an effort to
 review.
 
 [Discrete Notes](/courses/discrete-math/discrete-notes.pdf)
+<p><a href="{{ site.github.url }}/courses/discrete-math">Discrete Page</a></p>
 
 {% endcapture %}
-{% include collapsible.html title="Past Courses" content=discrete %}
+{% include collapsible.html title="Discrete Math" content=discrete %}
