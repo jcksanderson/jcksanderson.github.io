@@ -11,7 +11,7 @@ review.
 
 [Discrete Notes](/courses/discrete-math/discrete-notes.pdf)
 
-There's also a <p><a href="{{ site.github.url }}/courses/discrete-math">page</a></p> for the course, but don't bother looking at it.
+There's also a <a href="{{ site.github.url }}/courses/discrete-math">page</a> for the course, but don't bother looking at it.
 
 {% endcapture %}
 {% include collapsible.html title="Discrete Math" content=discrete %}
