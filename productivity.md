@@ -9,40 +9,63 @@ I figure I'm going to start keeping a timeline of my systems and routines to
 see how things change over time (some of this will be backfilled; I'm starting
 this in July of 2025).
 
-## Timeline
+#### timeline
 
-- July 2025: started using FlashSpace
-    - I initially setup Aerospace but found it a bit clunky for my liking.
-    - I'm more of a one screen, one task guy, so I didn't care at all about
-    tiling and just wanted the space control. FlashSpace does this faster and
-    more efficiently.
+{% capture flashspace %}
 
-- July 2025: blocked (most) social media on my laptop.
-    - It was becoming way too easy to open a twitter or reddit tab when I was
-    bored, so I blocked both of their home feeds.
-    - I can still search for a youtube video or specific subreddits.
+I am now using [FlashSpace](https://github.com/wojciech-kulik/FlashSpace) to manage spaces. I initially set up Aerospace but found it a bit clunky for my liking. I'm more of a one screen, one task guy, so I didn't care at all about tiling and just wanted the space control. FlashSpace does this faster and more efficiently.
 
-- June 2025: mapped `Ctrl + H/L` to Mac spaces navigation.
-    - I was sick of having to swipe on the trackpad or use Alfred to switch
-    apps.
-    - Unfortunately it was still a bit slow.
+{% endcapture %}
+{% include collapsible.html title="FlashSpace (July 2025)" content=flashspace %}
 
-- September 2024: downloaded ScreenZen.
-    - This is probably the single best decision I've ever made. Thank you Drew Gooden.
-    - Limit: 5 opens/app, 7 minutes each (for all social media).
 
-- May 2024: started using neovim.
-    - After using vanilla vim for a few months, neovim was a nice upgrade.
-    - I still use the same base (kickstart) config to this day. I try my best to
-      keep my config files clean and keep my config minimal.
+{% capture mediablock %}
 
-- March 2024: started using vim.
-    - It was recommended by my professor for Introduction to C programming. Glad
-      I stuck with it.
+It was becoming way to easy for me to just open twitter or reddit and doomscroll, so I've setup ublock to block the home screen for both of these apps (also youtube). I can still search for a youtube video or specific subreddits.
 
-- March 2024: stopped meditating daily.
-    - Don't have a great explanation for why other than it became less of a
-    priority.
-    - (Vim became my meditation.)
+{% endcapture %}
+{% include collapsible.html title="Social Media Blocking (July 2025)" content=mediablock %}
 
-- January 2024: started meditating daily.
+
+{% capture spacesnav %}
+
+This was because I was sick of using the trackpad to move between spaces.
+
+It was still a bit too slow for me, which is why I've since switched to FlashSpace.
+
+{% endcapture %}
+{% include collapsible.html title="Mapping `Ctrl + H/L` to Mac Spaces Navigation (June 2025)" content=spacesnav %}
+
+
+{% capture screenzen %}
+
+This is probably the single best decision I've ever made. Thank you Drew Gooden. My limit is 5 opens/app, 7 minutes each (for all social media). 
+
+After a year, I usually don't even reach 1 open for each app.
+
+{% endcapture %}
+{% include collapsible.html title="ScreenZen (September 2024)" content=screenzen %}
+
+
+{% capture neovim %}
+
+After using vanilla vim for a few months, neovim was a nice upgrade. I still use the same base (kickstart) config to this day. I try my best to keep my config files clean and keep my config minimal.
+
+{% endcapture %}
+{% include collapsible.html title="Started using Neovim (May 2024)" content=neovim %}
+
+
+{% capture vim %}
+
+It was recommended by my professor for Introduction to C programming. Glad I stuck with it.
+
+{% endcapture %}
+{% include collapsible.html title="Started using Vim (March 2024)" content=vim %}
+
+
+{% capture vim %}
+
+I started meditating daily in January of 2024, but stopped by March. Don't have a great explanation for why other than it became less of a priority. (Vim became my meditation.)
+
+{% endcapture %}
+{% include collapsible.html title="Meditation (January–March 2024)" content=vim %}
