@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jack Sanderson</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Jack Sanderson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>jacksanderson at uchicago dot edu (Jack Sanderson)</managingEditor>
+    <webMaster>jacksanderson at uchicago dot edu (Jack Sanderson)</webMaster>
+    
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/publications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>jacksanderson at uchicago dot edu (Jack Sanderson)</author>
+      <guid>http://localhost:1313/publications/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>about</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>jacksanderson at uchicago dot edu (Jack Sanderson)</author>
+      <guid>http://localhost:1313/about/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Agnes Callard on Longtermism</title>
+      <link>http://localhost:1313/posts/agnes_callard_longtermism/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>jacksanderson at uchicago dot edu (Jack Sanderson)</author>
+      <guid>http://localhost:1313/posts/agnes_callard_longtermism/</guid>
+      <description>Should longtermists bother advocating for longtermism?</description>
+      
+    </item>
+    
+    <item>
+      <title>courses</title>
+      <link>http://localhost:1313/courses/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>jacksanderson at uchicago dot edu (Jack Sanderson)</author>
+      <guid>http://localhost:1313/courses/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Objective Functions</title>
+      <link>http://localhost:1313/posts/objective_functions_intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>jacksanderson at uchicago dot edu (Jack Sanderson)</author>
+      <guid>http://localhost:1313/posts/objective_functions_intro/</guid>
+      <description>What doing we care about them more than we do?</description>
+      
+    </item>
+    
+    <item>
+      <title>productivity</title>
+      <link>http://localhost:1313/productivity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>jacksanderson at uchicago dot edu (Jack Sanderson)</author>
+      <guid>http://localhost:1313/productivity/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

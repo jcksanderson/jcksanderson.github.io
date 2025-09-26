@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abouts on Jack Sanderson</title>
+    <link>http://localhost:1313/about/</link>
+    <description>Recent content in Abouts on Jack Sanderson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>jacksanderson at uchicago dot edu (Jack Sanderson)</managingEditor>
+    <webMaster>jacksanderson at uchicago dot edu (Jack Sanderson)</webMaster>
+    <copyright>© 2025 Jack Sanderson</copyright>
+    <atom:link href="http://localhost:1313/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>about</title>
+      <link>http://localhost:1313/about/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>jacksanderson at uchicago dot edu (Jack Sanderson)</author>
+      <guid>http://localhost:1313/about/about/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>
