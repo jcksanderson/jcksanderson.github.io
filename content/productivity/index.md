@@ -13,7 +13,7 @@ Any date that doesn't have an end means I'm still using the tool/system/etc.
 
 {{< collapsible title="Leechblock (November 2025)" >}}
 
-Inspired by [Matt Might](https://matt.might.net/articles/cripple-your-technology/), I'm now using [Leechblock](https://addons.mozilla.org/en-US/firefox/addon/leechblock-ng/) to block all social media on my computer except for the majority of the day. It's definitely *annoying*, but there's no doubt it helps me stay on task.
+Inspired by [Matt Might](https://matt.might.net/articles/cripple-your-technology/), I'm now using [Leechblock](https://addons.mozilla.org/en-US/firefox/addon/leechblock-ng/) to block all social media on my computer for the majority of the day. It's definitely *annoying*, but helps me stay on task quite well.
 
 {{< /collapsible >}}
 
