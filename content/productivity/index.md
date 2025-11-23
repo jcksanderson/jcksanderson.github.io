@@ -18,9 +18,9 @@ Inspired by [Matt Might](https://matt.might.net/articles/cripple-your-technology
 {{< /collapsible >}}
 
 
-{{< collapsible title="\"Today\" File (October 2025)" >}}
+{{< collapsible title="Daily Markdown File (October 2025)" >}}
 
-After being tired of not having a place to collect all my random thoughts, I created a simple vim remap (`<leader>tod`) to take me to a `daily.md` file where I dump any idea/long-term todo I have. So far it seems mildly useful, though I haven't been using it every day. Doing so is my next goal.
+After being tired of not having a place to collect all my random thoughts, I created a simple vim remap (`<leader>tod`) to take me to a `daily.md` file and dump any idea/long-term todo I have. (I call it `daily.md` because I can insert a daily heading with `<leader>date`!) So far it seems mildly useful, though I haven't been using it every day. Doing so is my next goal.
 
 {{< /collapsible >}}
 
