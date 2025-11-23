@@ -18,6 +18,14 @@ Inspired by [Matt Might](https://matt.might.net/articles/cripple-your-technology
 {{< /collapsible >}}
 
 
+{{< collapsible title="'Today' File" >}}
+
+After being tired of not having a place to collect all my random thoughts, I created a simple vim remap (`<leader>tod`) to take me to a `daily.md` file where I dump any idea/long-term todo I have. So far it seems mildly useful, though I haven't been using it every day. Doing so is my next goal.
+
+{{< /collapsible >}}
+
+
+
 {{< collapsible title="FlashSpace (July 2025)" >}}
 
 I am now using [FlashSpace](https://github.com/wojciech-kulik/FlashSpace) to manage spaces. I initially set up Aerospace but found it a bit clunky for my liking. I'm more of a one screen, one task guy, so I didn't care at all about tiling and just wanted the space control. FlashSpace does this faster and more efficiently.
