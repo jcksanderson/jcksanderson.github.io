@@ -25,7 +25,6 @@ After being tired of not having a place to collect all my random thoughts, I cre
 {{< /collapsible >}}
 
 
-
 {{< collapsible title="FlashSpace (July 2025)" >}}
 
 I am now using [FlashSpace](https://github.com/wojciech-kulik/FlashSpace) to manage spaces. I initially set up Aerospace but found it a bit clunky for my liking. I'm more of a one screen, one task guy, so I didn't care at all about tiling and just wanted the space control. FlashSpace does this faster and more efficiently.
@@ -40,11 +39,16 @@ It was becoming way to easy for me to just open twitter or reddit and doomscroll
 {{< /collapsible >}}
 
 
+{{< collapsible title="Grayscale Phone (June 2025)" >}}
+
+Right when school ended for the 2024-2025 academic year, I finally committed to grayscaling my phone. At first it definitely made using it more appealing, but I think the only reason I've kept it around is because now the full color mode has become straining to look at. (The purpose of doing this right as school ended was to promote a summer lock-in, and I think I mostly succeeded!)
+
+{{< /collapsible >}}
+
+
 {{< collapsible title="Mapping Ctrl + H/L to Mac Spaces Navigation (June 2025–July 2025))" >}}
 
-This was because I was sick of using the trackpad to move between spaces.
-
-It was still a bit too slow for me, which is why I've since switched to FlashSpace.
+This was because I was sick of using the trackpad to move between spaces. It was still a bit too slow for me, which is why I've since switched to FlashSpace.
 
 {{< /collapsible >}}
 
