@@ -85,6 +85,11 @@ html {
   margin-top: 0em;
 }
 
+.blog-content.prose ul,
+.blog-content.prose ol {
+  margin-bottom: 1.2em;
+}
+
 /* Style footnote markers in content */
 .footnote-marker sup {
   cursor: pointer;

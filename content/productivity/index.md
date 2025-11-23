@@ -11,6 +11,13 @@ started this in July of 2025).
 ## timeline
 Any date that doesn't have an end means I'm still using the tool/system/etc.
 
+{{< collapsible title="Leechblock (November 2025)" >}}
+
+Inspired by [Matt Might](https://matt.might.net/articles/cripple-your-technology/), I'm now using [Leechblock](https://addons.mozilla.org/en-US/firefox/addon/leechblock-ng/) to block all social media on my computer except for the majority of the day. It's definitely *annoying*, but there's no doubt it helps me stay on task.
+
+{{< /collapsible >}}
+
+
 {{< collapsible title="FlashSpace (July 2025)" >}}
 
 I am now using [FlashSpace](https://github.com/wojciech-kulik/FlashSpace) to manage spaces. I initially set up Aerospace but found it a bit clunky for my liking. I'm more of a one screen, one task guy, so I didn't care at all about tiling and just wanted the space control. FlashSpace does this faster and more efficiently.

@@ -1,6 +1,8 @@
 ---
 title: "Agnes Callard on Longtermism"
 summary: "Should longtermists bother advocating for longtermism?"
+date: 2025-09-26
+showdate: true
 ---
 
 The University of Chicago has a tradition dubbed the "Aims of Education Address". As put by the university:

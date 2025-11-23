@@ -9,7 +9,27 @@
     <managingEditor>jacksanderson at uchicago dot edu (Jack Sanderson)</managingEditor>
     <webMaster>jacksanderson at uchicago dot edu (Jack Sanderson)</webMaster>
     
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 22 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Valuable Research Incurs High Loss</title>
+      <link>http://localhost:1313/posts/high_loss_research/</link>
+      <pubDate>Sat, 22 Nov 2025 00:00:00 +0000</pubDate>
+      <author>jacksanderson at uchicago dot edu (Jack Sanderson)</author>
+      <guid>http://localhost:1313/posts/high_loss_research/</guid>
+      <description>So let&amp;rsquo;s make sure to research things that would be surprising if true.</description>
+      
+    </item>
+    
+    <item>
+      <title>Agnes Callard on Longtermism</title>
+      <link>http://localhost:1313/posts/agnes_callard_longtermism/</link>
+      <pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate>
+      <author>jacksanderson at uchicago dot edu (Jack Sanderson)</author>
+      <guid>http://localhost:1313/posts/agnes_callard_longtermism/</guid>
+      <description>Should longtermists bother advocating for longtermism?</description>
+      
+    </item>
     
     <item>
       <title></title>
@@ -28,16 +48,6 @@
       <author>jacksanderson at uchicago dot edu (Jack Sanderson)</author>
       <guid>http://localhost:1313/about/</guid>
       <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Agnes Callard on Longtermism</title>
-      <link>http://localhost:1313/posts/agnes_callard_longtermism/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>jacksanderson at uchicago dot edu (Jack Sanderson)</author>
-      <guid>http://localhost:1313/posts/agnes_callard_longtermism/</guid>
-      <description>Should longtermists bother advocating for longtermism?</description>
       
     </item>
     
