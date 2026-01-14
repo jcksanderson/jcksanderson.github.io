@@ -4,18 +4,24 @@
 
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-11-22T00:00:00+00:00</lastmod>
+    <lastmod>2025-12-17T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-11-22T00:00:00+00:00</lastmod>
+    <lastmod>2025-12-17T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/posts/expected_surprisal/</loc>
+    <loc>http://localhost:1313/posts/hypotheses/</loc>
+    <lastmod>2025-12-17T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/high_loss_research/</loc>
     <lastmod>2025-11-22T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
