@@ -1,4 +1,5 @@
 working/**
+public/**
 
 *.gem
 .bundle
