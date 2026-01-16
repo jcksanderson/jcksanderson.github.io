@@ -8,4 +8,4 @@ cascade:
   invertPagination: true
 ---
 
-There's no overarching theme here, just various ideas I've had.
+There's no overarching theme here, just various things I think about.
