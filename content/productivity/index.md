@@ -11,6 +11,8 @@ started this in July of 2025).
 ## timeline
 Any date that doesn't have an end means I'm still using the tool/system/etc.
 
+
+
 {{< collapsible title="Leechblock (November 2025)" >}}
 
 Inspired by [Matt Might](https://matt.might.net/articles/cripple-your-technology/), I'm now using [Leechblock](https://addons.mozilla.org/en-US/firefox/addon/leechblock-ng/) to block all social media on my computer for the majority of the day. It's definitely *annoying*, but helps me stay on task quite well.
@@ -21,6 +23,15 @@ Inspired by [Matt Might](https://matt.might.net/articles/cripple-your-technology
 {{< collapsible title="Daily Markdown File (October 2025)" >}}
 
 After being tired of not having a place to collect all my random thoughts, I created a simple vim remap (`<leader>tod`) to take me to a `daily.md` file and dump any idea/long-term todo I have. (I call it `daily.md` because I can insert a daily heading with `<leader>date`!) So far it seems mildly useful, though I haven't been using it every day. Doing so is my next goal.
+
+{{< /collapsible >}}
+
+
+{{< collapsible title="VimTeX (September 2025)" >}}
+
+I setup VimTeX in the style of [Gilles Castelle](https://castel.dev/post/lecture-notes-1/) following [Elijan Mastnak's guide](https://ejmastnak.com/tutorials/vim-latex/intro/). There's a pretty strong learning curve, but it's great once you start to memorize your snippets.
+
+*Update January 2026:* I initially used the Skim PDF reader but I found it annoying as when the PDF was in the "single-page continuous" view mode, it would flash black upon the LaTeX re-rendering on save. I just switched to [Sioyek](https://github.com/ahrm/sioyek) to avoid this issue and highly recommend it.
 
 {{< /collapsible >}}
 
