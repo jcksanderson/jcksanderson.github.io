@@ -57,7 +57,7 @@ Right when school ended for the 2024-2025 academic year, I finally committed to 
 {{< /collapsible >}}
 
 
-{{< collapsible title="Mapping Ctrl + H/L to Mac Spaces Navigation (June 2025–July 2025))" >}}
+{{< collapsible title="Mapping Ctrl + H/L to Mac Spaces Navigation (June 2025–July 2025)" >}}
 
 This was because I was sick of using the trackpad to move between spaces. It was still a bit too slow for me, which is why I've since switched to FlashSpace.
 
