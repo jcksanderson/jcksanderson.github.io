@@ -52,7 +52,7 @@
       <div class="min-w-0 min-h-0 max-w-custom flex-grow">
         {{ partial "series/series.html" . }}
         <div class="article-content max-w-custom mb-0">
-          <div class="blog-content prose">
+          <div class="blog-content prose dark:prose-invert">
             {{ .Content }}
           </div>
           {{ $defaultReplyByEmail := site.Params.replyByEmail }}
