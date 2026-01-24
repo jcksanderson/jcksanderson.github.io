@@ -33,9 +33,8 @@ What I notice is that my response to the infertility scenario is very different 
 ***
 
 ## My Reaction
-I find this argument (which I was unaware of before watching this address) very compelling. To be honest, I'm not sure why it isn't brought up more in longtermist circles[^2]. The rest of the talk is fairly good as well (although I disagree that the fact that Scheffler's "pyramid scheme" proposal for how humans define meaning is invalid because it is illogical; I believe that the validity of an argument has little to do with the extent to which that argument influences our lives). 
+I find this argument (which I was unaware of before watching this address) very compelling. To be honest, I'm not sure why it isn't brought up more in longtermist circles. The rest of the talk is fairly good as well (although I disagree that the fact that Scheffler's "pyramid scheme" proposal for how humans define meaning is invalid because it is illogical; I feel like the validity of an argument has little to do with the extent to which that argument influences our lives). 
 
 
-[^1]: Great word.
-[^2]: Okay, well I know why it isn't brought up: it makes the longtermist ideology seem largely unnecessary due to its intrinsic existence in humans.
+[^1]: Cool word.
 
