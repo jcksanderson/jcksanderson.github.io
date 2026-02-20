@@ -5,15 +5,40 @@
   cursor: pointer;
   line-height: 1.4;
   transition: background-color 0.3s ease;
+  margin-bottom: 0.25em;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
 }
+
+/* Light mode styles (default) */
 .collapsible:hover {
-  background-color: #f0f0f0;
+  background-color: #eeeeee;
+}
+.collapsible.active {
+  background-color: #eeeeee;
+  margin-bottom: 0;
+  border-radius: 4px 4px 0 0;
+  text-decoration: none;
 }
 .collapsible-content {
   display: none;
   line-height: 1.5;
-  margin-top: -0.2em;
-  margin-bottom: 0.35em;
+  margin-top: 0;
+  margin-bottom: 0.65em;
+  padding: 0.5em 0.4em;
+  border-radius: 0 0 4px 4px;
+  background-color: #f8f8f8;
+}
+
+/* Dark mode styles */
+.dark .collapsible:hover {
+  background-color: #161616;
+}
+.dark .collapsible.active {
+  background-color: #161616;
+}
+.dark .collapsible-content {
+  background-color: #1d1d1d;
 }
 
 /* always have scrollbar on so the site never "shifts" when you click something */

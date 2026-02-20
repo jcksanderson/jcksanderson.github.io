@@ -86,7 +86,9 @@ document.querySelectorAll(".collapsible").forEach(el => {
   el.addEventListener("click", () => {
     const content = el.nextElementSibling;
     if (content && content.classList.contains("collapsible-content")) {
-      content.style.display = content.style.display === "block" ? "none" : "block";
+      const isOpen = content.style.display === "block";
+      content.style.display = isOpen ? "none" : "block";
+      el.classList.toggle("active", !isOpen);
     }
   });
 });
