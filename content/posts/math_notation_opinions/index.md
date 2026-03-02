@@ -44,7 +44,7 @@ That's probably what is most correct, but as I previously mentioned I don't give
 \[
     L(\theta | X) = \prod_{i = 1}^n f_X(X_i | \theta).
 \]
-But wait, should we really write $L(\theta | X)$? I guess it's fine if we frst clarify $X$ is the random vector with elements $X_1, X_2, \dots, X_{n}$, but it's still a bit unclear. For a while, I instead used $L(\theta | X^{n})$ as a "clearer" shorthand, but it is definitely way less clear because $n$ looks like an exponent. What I've settled on is borrowing from array slicing notation:
+But wait, should we really write $L(\theta | X)$? I guess it's fine if we first clarify $X$ is the random vector with elements $X_1, X_2, \dots, X_{n}$, but it's still a bit unclear. For a while, I instead used $L(\theta | X^{n})$ as a "clearer" shorthand, but it is definitely way less clear because $n$ looks like an exponent. What I've settled on is borrowing from array slicing notation:
 \[
     L(\theta | X_{1:n}) = \prod_{i = 1}^n f_X(X_i | \theta).
 \]
