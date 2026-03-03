@@ -3,10 +3,8 @@ title: "productivity"
 layout: "custom"
 ---
 
-I am trying my best this summer to become more productive. I'm not a serial doomscroller or anything, but I like making small, incremental improvements.
-I figure I'm going to start keeping a timeline of my systems and routines to
-see how things change over time (some of this is backfilled; I 
-started this in July of 2025). 
+Last summer, I started trying my best at becoming more productive. I wasn't a serial doomscroller or anything, but I thought trying to make small, incremental improvements couldn't hurt.
+I started keeping a timeline of my systems and routines to see how things have changed over time (some of this is backfilled; I started this in July of 2025). 
 
 ## timeline
 You can click on the tools/systems/etc. below to see my thoughts on them. Any date that doesn't have an end means I'm still using it.
