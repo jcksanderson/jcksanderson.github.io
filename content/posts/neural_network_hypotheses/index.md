@@ -35,7 +35,7 @@ Plato has finally been vindicated: different neural networks seem to be convergi
 ### Data over Algorithms
 I used to think that AI progress was mostly about the compute and the algorithms. But there are some reasons why I no longer believe this (in no particular order):
 - Jack Morris has a [popular tweet](https://x.com/jxmnop/status/1784696357892063565) about the [Pretraining Without Attention paper](https://arxiv.org/abs/2212.10544). He argues that based on the paper, if there are enough parameters in your neural network and it is "well-conditioned" with nonlinearities and connections, the exact architectural details may not matter. 
-- James Betkar argued in his [blog](https://nonint.com/2023/06/10/the-it-in-ai-models-is-the-dataset/) (in June 2023!) the importance of data: "*trained on the same dataset for long enough, pretty much every model with enough weights and training time converges to the same point.*" 
+- James Betkar argued in his [blog](https://web.archive.org/web/20260210173522/https://nonint.com/2023/06/10/the-it-in-ai-models-is-the-dataset/) (in June 2023!) the importance of data: "*trained on the same dataset for long enough, pretty much every model with enough weights and training time converges to the same point.*" 
 - Qwen3 and Llama 2 use very similar architectures. Qwen3 is a much more performant model (and the same goes for Llama 3).
 - Filtering pretraining data to remove harmful knowledge [works as you'd expect](https://arxiv.org/abs/2508.06601). 
 - Filtering pretraining data to remove mentions of AI misalignment [reduces misalignment](https://arxiv.org/abs/2601.10160v1).
