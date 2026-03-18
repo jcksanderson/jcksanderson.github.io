@@ -1,6 +1,8 @@
 working/**
 public/**
+.notes.md
 
+.hugo_build.lock
 *.gem
 .bundle
 .jekyll-cache

@@ -29,16 +29,26 @@
   border-radius: 0 0 4px 4px;
   background-color: #f8f8f8;
 }
+.prose .collapsible-content p {
+  margin-top: 0.35em;
+  margin-bottom: 0.40em;
+}
+.prose .collapsible-content p:first-child {
+  margin-top: 0em;
+}
+.prose .collapsible-content p:last-child {
+  margin-bottom: 0em;
+}
 
 /* Dark mode styles */
 .dark .collapsible:hover {
-  background-color: #161616;
+  background-color: #222222;
 }
 .dark .collapsible.active {
-  background-color: #161616;
+  background-color: #222222;
 }
 .dark .collapsible-content {
-  background-color: #1d1d1d;
+  background-color: #303030;
 }
 
 /* always have scrollbar on so the site never "shifts" when you click something */
