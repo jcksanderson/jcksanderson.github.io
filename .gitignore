@@ -1,6 +1,7 @@
 working/**
 public/**
 .notes.md
+resources/**
 
 .hugo_build.lock
 *.gem
