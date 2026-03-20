@@ -36,8 +36,8 @@
       {{ $showRelated := site.Params.article.showRelatedPosts | default false }}
       {{ $topClass := cond (hasPrefix site.Params.header.layout "fixed") "lg:top-[140px]" "lg:top-10" }}
       {{ if or $showToc $showRelated }}
-        <div class="order-first lg:ml-auto px-0 lg:order-last ltr:lg:pl-8 rtl:lg:pr-8 flex-shrink-0">
-          <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky {{ $topClass }}">
+        <div class="order-first lg:ms-auto px-0 lg:order-last lg:ps-12 flex-shrink-0">
+          <div class="toc ps-5 print:hidden lg:sticky {{ $topClass }}">
             {{ if $showToc }}
               {{ partial "toc.html" . }}
             {{ end }}
@@ -76,22 +76,6 @@
         {{ partial "related.html" . }}
       </div>
 
-      {{ $translations := .AllTranslations }}
-      {{ with .File }}
-        {{ $path := .Path }}
-        {{ range $translations }}
-          {{ $lang := print "."  .Lang  ".md" }}
-          {{ $path = replace $path $lang ".md" }}
-        {{ end }}
-        {{ $jsPage := resources.Get "js/page.js" }}
-        {{ $jsPage = $jsPage | resources.Minify | resources.Fingerprint (site.Params.fingerprintAlgorithm | default "sha512") }}
-        <script
-          type="text/javascript"
-          src="{{ $jsPage.RelPermalink }}"
-          integrity="{{ $jsPage.Data.Integrity }}"
-          data-oid="views_{{ $path }}"
-          data-oid-likes="likes_{{ $path }}"></script>
-      {{ end }}
     </section>
 
     {{/* Footer */}}
