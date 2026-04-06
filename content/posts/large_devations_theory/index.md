@@ -1,6 +1,6 @@
 ---
 title: "Introductory Notes on Large Deviations Theory"
-summary: "The theory of probabilities of rare and extreme events."
+summary: "The probabilities of rare and extreme events."
 date: 2026-04-05
 showdate: true
 ---
