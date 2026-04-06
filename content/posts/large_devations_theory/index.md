@@ -1,6 +1,6 @@
 ---
-title: "Some Notes on Large Deviations Theory"
-summary: "What happens when the central limit theorem breaks down?"
+title: "Introductory Notes on Large Deviations Theory"
+summary: "The theory of probabilities of rare and extreme events."
 date: 2026-04-05
 showdate: true
 ---
