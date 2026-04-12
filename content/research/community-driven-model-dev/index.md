@@ -1,7 +1,7 @@
 ---
 title: "Community-Driven Model Development is Unreliable and Unsafe"
 date: 2026-04-12
-_build:
+build:
   list: never
   render: always
 sitemap:
