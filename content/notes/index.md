@@ -1,5 +1,5 @@
 ---
-title: "courses"
+title: "notes"
 layout: "custom"
 ---
 

@@ -13,43 +13,49 @@
       {{ end }}
     {{ end }}
 
-    {{/* Header */}}
-    <header id="single_header" class="max-w-custom mx-auto">
-      {{ if .Params.showBreadcrumbs | default (site.Params.article.showBreadcrumbs | default false) }}
-        {{ partial "breadcrumbs.html" . }}
-      {{ end }}
-      <h1 style="margin-top: 6rem !important;" class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-        {{ .Title | emojify }}
-      </h1>
-      <div class="mt-1 mb-0 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
-        {{ partial "article-meta/basic.html" (dict "context" . "scope" "single") }}
-      </div>
-      {{ if not (.Params.showAuthorBottom | default (site.Params.article.showAuthorBottom | default false)) }}
-        {{ template "SingleAuthor" . }}
-      {{ end }}
-    </header>
+    {{ $enableToc := site.Params.article.showTableOfContents | default (site.Params.list.showTableOfContents | default false) }}
+    {{ $showToc := and $enableToc (in .TableOfContents "<ul") }}
+    {{ $topClass := cond (hasPrefix site.Params.header.layout "fixed") "lg:top-[140px]" "lg:top-10" }}
 
-    {{/* Body */}}
-    <section class="flex flex-col max-w-custom mx-auto mt-0 prose dark:prose-invert lg:flex-row">
-      {{ $enableToc := site.Params.article.showTableOfContents | default (site.Params.list.showTableOfContents | default false) }}
-      {{ $showToc := and $enableToc (in .TableOfContents "<ul") }}
-      {{ $showRelated := site.Params.article.showRelatedPosts | default false }}
-      {{ $topClass := cond (hasPrefix site.Params.header.layout "fixed") "lg:top-[140px]" "lg:top-10" }}
-      {{ if or $showToc $showRelated }}
-        <div class="order-first lg:ms-auto px-0 lg:order-last lg:ps-12 flex-shrink-0">
-          <div class="toc ps-5 print:hidden lg:sticky {{ $topClass }}">
-            {{ if $showToc }}
-              {{ partial "toc.html" . }}
-            {{ end }}
-            {{ if $showRelated }}
-              sd
-            {{ end }}
-          </div>
+    <div class="post-layout">
+
+      {{/* Header: occupies center column only (grid-area: post-header).
+           On mobile it just flows first. */}}
+      <header id="single_header" class="post-header-col">
+        {{ if .Params.showBreadcrumbs | default (site.Params.article.showBreadcrumbs | default false) }}
+          {{ partial "breadcrumbs.html" . }}
+        {{ end }}
+        <h1 style="margin-top: 6rem !important;" class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+          {{ .Title | emojify }}
+        </h1>
+        <div class="mt-1 mb-0 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+          {{ partial "article-meta/basic.html" (dict "context" . "scope" "single") }}
         </div>
-      {{ end }}
+        {{ if not (.Params.showAuthorBottom | default (site.Params.article.showAuthorBottom | default false)) }}
+          {{ template "SingleAuthor" . }}
+        {{ end }}
+      </header>
 
+      {{/* Left column: ToC sidebar (xl+ only via CSS; JS moves node inline on smaller screens) */}}
+      <aside class="post-toc-col print:hidden">
+        {{ if $showToc }}
+          <div id="toc-sidebar-wrapper" class="toc sticky {{ $topClass }}">
+            {{ partial "toc.html" . }}
+          </div>
+        {{ end }}
+      </aside>
 
-      <div class="min-w-0 min-h-0 max-w-custom flex-grow">
+      {{/* Center column: body text (sidenotes positioned absolutely within) */}}
+      <div class="post-body-col min-w-0">
+
+        {{/* Right column: sidenotes (1100px+ only via CSS, populated by JS) */}}
+        <aside class="post-sidenotes-col print:hidden" id="sidenotes-container" aria-label="Footnotes"></aside>
+
+        {{/* Inline ToC placeholder — JS moves the sidebar ToC node here on screens below lg */}}
+        {{ if $showToc }}
+          <div id="toc-inline-placeholder" class="mt-4 lg:hidden"></div>
+        {{ end }}
+
         {{ partial "series/series.html" . }}
         <div class="article-content max-w-custom mb-0">
           <div class="blog-content prose dark:prose-invert">
@@ -74,27 +80,138 @@
         {{ partial "series/series-closed.html" . }}
         {{ partial "sharing-links.html" . }}
         {{ partial "related.html" . }}
+
+        <footer class="pt-0 print:hidden">
+          {{ partial "article-pagination.html" . }}
+          {{ if .Params.showComments | default (site.Params.article.showComments | default false) }}
+            {{ if templates.Exists "partials/comments.html" }}
+              <div class="pt-3">
+                <hr class="border-dotted border-neutral-300 dark:border-neutral-600">
+                <div class="pt-3">
+                  {{ partial "comments.html" . }}
+                </div>
+              </div>
+            {{ else }}
+              {{ warnf "[BLOWFISH] Comments are enabled for %s but no comments partial exists." .File.Path }}
+            {{ end }}
+          {{ end }}
+        </footer>
+
       </div>
 
-    </section>
-
-    {{/* Footer */}}
-    <footer class="pt-8 max-w-custom mx-auto print:hidden">
-      {{ partial "article-pagination.html" . }}
-      {{ if .Params.showComments | default (site.Params.article.showComments | default false) }}
-        {{ if templates.Exists "partials/comments.html" }}
-          <div class="pt-3">
-            <hr class="border-dotted border-neutral-300 dark:border-neutral-600">
-            <div class="pt-3">
-              {{ partial "comments.html" . }}
-            </div>
-          </div>
-        {{ else }}
-          {{ warnf "[BLOWFISH] Comments are enabled for %s but no comments partial exists." .File.Path }}
-        {{ end }}
-      {{ end }}
-    </footer>
+    </div>
   </article>
+
+  {{/* ToC placement: moves the single ToC DOM node between sidebar and inline placeholder.
+       Runs after smartTOC's DOMContentLoaded listener so smartTOC captures the node reference
+       first, then the move happens — highlighting works correctly in both positions. */}}
+  {{ if $showToc }}
+  <script>
+  (function () {
+    var XL = 1024; // matches the lg CSS breakpoint where the sidebar column activates
+    var wrapper = document.getElementById('toc-sidebar-wrapper');
+    var sidebar = wrapper && wrapper.parentElement;
+    var placeholder = document.getElementById('toc-inline-placeholder');
+
+    function placeToc() {
+      if (!wrapper || !placeholder || !sidebar) return;
+      if (window.innerWidth >= XL) {
+        if (!sidebar.contains(wrapper)) sidebar.appendChild(wrapper);
+        wrapper.style.position = ''; // restore CSS sticky
+      } else {
+        if (!placeholder.contains(wrapper)) placeholder.appendChild(wrapper);
+        wrapper.style.position = 'static'; // disable sticky so it scrolls with the page
+      }
+    }
+
+    var resizeTimer;
+    window.addEventListener('resize', function () {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(placeToc, 150);
+    });
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', placeToc);
+    } else {
+      placeToc();
+    }
+  })();
+  </script>
+  {{ end }}
+
+  {{/* Sidenotes: extracts Hugo's rendered footnotes and positions them in the right column.
+       On narrow screens (< 1100px) the sidenote container is cleared and the native
+       footnotes section is restored, so footnotes always appear somewhere. */}}
+  <script>
+  (function () {
+    function initSidenotes() {
+      var container = document.getElementById('sidenotes-container');
+      var footnotesSection = document.querySelector('.footnotes');
+      if (!container || !footnotesSection) return;
+
+      if (window.innerWidth < 1100) {
+        container.innerHTML = '';
+        container.style.minHeight = '';
+        return;
+      }
+
+      /* Already populated — nothing to do. */
+      if (container.children.length > 0) return;
+
+      var refs = Array.from(document.querySelectorAll('sup[id^="fnref:"]'));
+      if (!refs.length) return;
+
+      var items = [];
+      refs.forEach(function (ref) {
+        var link = ref.querySelector('a');
+        if (!link) return;
+        var fnId = link.getAttribute('href').slice(1);
+        var fnEl = document.getElementById(fnId);
+        if (!fnEl) return;
+
+        var clone = fnEl.cloneNode(true);
+        var backlink = clone.querySelector('a[href^="#fnref"]');
+        if (backlink) backlink.remove();
+
+        var div = document.createElement('div');
+        div.className = 'sidenote';
+        div.innerHTML = '<sup class="sidenote-number">' + link.textContent.trim() + '</sup> ' + clone.innerHTML;
+        container.appendChild(div);
+        items.push({ ref: ref, div: div });
+      });
+
+      if (!items.length) return;
+
+      var containerTop = container.getBoundingClientRect().top;
+      var nextBottom = 0;
+
+      items.forEach(function (item) {
+        var refTop = item.ref.getBoundingClientRect().top;
+        var targetTop = refTop - containerTop;
+        var top = Math.max(targetTop, nextBottom);
+        item.div.style.top = top + 'px';
+        nextBottom = top + item.div.offsetHeight + 12;
+      });
+
+      var last = items[items.length - 1];
+      container.style.minHeight = (parseFloat(last.div.style.top) + last.div.offsetHeight) + 'px';
+
+    }
+
+    var resizeTimer;
+    window.addEventListener('resize', function () {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(initSidenotes, 150);
+    });
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initSidenotes);
+    } else {
+      initSidenotes();
+    }
+  })();
+  </script>
+
 {{ end }}
 
 {{ define "SingleAuthor" }}

@@ -31,8 +31,8 @@
  url = "https://scholar.google.com/citations?user=xt0UL38AAAAJ&hl=en&oi=sra"
 
 [[main]]
- name = "courses"
- url = "/courses/"
+ name = "notes"
+ url = "/notes/"
  weight = 40
 
 [[main]]
