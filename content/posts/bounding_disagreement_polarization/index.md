@@ -7,7 +7,7 @@ showdate: true
 
 {{< katex >}}
 
-**Note:** I recommend reading the original [PDF version](/papers/bounding_disagreement_polarization.pdf) of this work if you're actually interested. I spent a good amount of tim making its formatting particularly clean, and it'll let you better reference theorems and lemmas. But I wanted to make a blog-style version as well, which you can find below.
+**Note:** I recommend reading the original [PDF version](/papers/bounding_disagreement_polarization.pdf) of this work if you're actually interested. I spent a good amount of time making its formatting particularly clean, and it'll let you better reference theorems and lemmas. But I wanted to make a blog-style version as well, which you can find below.
 
 ## Introduction
 
