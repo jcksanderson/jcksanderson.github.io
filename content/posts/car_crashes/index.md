@@ -1,7 +1,7 @@
 ---
 title: "Don't ignore the car crashes, and remember your freshman CS"
 summary: "Two metaphors with one stone."
-date: 2026-06-26
+date: 2026-06-25
 showdate: true
 ---
 
