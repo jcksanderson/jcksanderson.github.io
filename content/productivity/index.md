@@ -10,6 +10,12 @@ I started keeping a timeline of my systems and routines to see how things have c
 You can click on the tools/systems/etc. below to see my thoughts on them. Any date that doesn't have an end means I'm still using it.
 
 
+{{< collapsible title="Post-its (June 2026)" >}}
+
+I've started experimenting with writing down short-term self-commitments on Post-its. For example, if I plan to read papers from 9:45 to 11:00, I will literally write "Read Papers 9:45 -- 11:00" on a Post-it and stick it on my wall/computer/etc. I find it makes the commitment a) feel more real and thus b) harder to forget or ignore.
+
+{{< /collapsible >}}
+
 
 {{< collapsible title="Tock (February 2026)" >}}
 
