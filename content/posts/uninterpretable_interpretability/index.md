@@ -35,6 +35,7 @@ While I understand that there's a limited amount of complexity that you want to 
 
 Thus, as the field of interpretability starts using increasingly complex techniques, I believe it will become increasingly important to fairly characterize what a given technique *can* and *can't* do. Newer and more complex UnInterp techniques like NLAs probably *will* be able to do a lot more than past ones, but with complexity will also come new, unique limitations that ought to be honestly represented. I believe a soft bias towards simpler solutions while keeping trust inversely proportional to complexity---and communicating as such---largely addresses these issues. First, though, the community must recognize the communication problem that UnInterp techniques introduce.
 
+*I'd like to thank [John Hewitt](https://www.cs.columbia.edu/~johnhew/) for introducing me to the tension of using uninterpretable techniques to do interpretability work, and [Zephy Roe](https://zephaniahdev.com/) for feedback on a draft of this post.*
 
 
 [^1]: I do not mean for "uninterpretable" here to have a negative connotation; it's simply the word that best characterizes the techniques I'm specifically interested in addressing in this post.
