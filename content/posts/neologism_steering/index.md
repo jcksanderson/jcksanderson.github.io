@@ -7,6 +7,15 @@ showdate: true
 
 {{< katex >}}
 
+## Summary
+- We steer a model using steering vectors so that it generates responses to questions using some persona.
+- Using those responses, we train a new token embedding---*neologism*---for the model, then ask the model to a) respond in the style of this neologism, or b) explain it.
+- The neologism responses align significantly better with the original steering vector than the steering vector's own responses, as measured by the vector projection of neologism response and steered response activations onto the steering vector. 
+- Further, the neologism responses are generally more coherent and expressive of the trait (as judged by an LLM).
+- These phenomena only occur with *neologisms* trained using *steering-vector-generated data,* i.e., train new steering vectors or use merely prompted data and some of the phenomena disappear.
+
+## Intro
+
 Steering vectors have many uses.[^0] But how do *models interpret* their own steering vectors? Presumably, a steering vector for concept $X$ should be understood by the model as concept $X$, but past work has shown that steering vectors [can misgeneralize](https://arxiv.org/abs/2407.12404v8), so it's not obvious what models might say. Let's look into it!
 
 
