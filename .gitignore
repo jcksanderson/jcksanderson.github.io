@@ -14,3 +14,7 @@ Gemfile.lock
 **/.DS_Store
 
 todo.md
+
+layouts/_default/single_pre3col_backup.html
+layouts/partials/toc_preserved.html
+content/fun/literature.md
