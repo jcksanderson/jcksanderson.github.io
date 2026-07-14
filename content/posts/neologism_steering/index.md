@@ -1,6 +1,6 @@
 ---
-title: "Giving models an embedding for their steering vectors"
-summary: "and seeing how they explain it."
+title: "Giving models a new token so they can explain their steering vectors"
+summary: "The results are interesting"
 date: 2026-07-17
 showdate: true
 ---
