@@ -1,7 +1,7 @@
 ---
 title: "Miscommunication, or giving models a new token so they can explain their steering vectors"
 summary: "The results are interesting"
-date: 2026-07-16
+date: 2026-07-20
 showdate: true
 ---
 
