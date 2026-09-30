@@ -3,9 +3,10 @@ title: "current thoughts"
 layout: "custom"
 ---
 
-## July 17, 2026
+## September 30, 2026
 
-I've been thinking a lot about deceitfulness and its relationship to scheming and laziness. I'll probably write a post about this.
+
+I find it interesting that in the wake of the HuggingFace incident, it was Jacob Coxon's tweet that went viral---not a well-known AI safety figure, not even a well-known capabilities researcher. 
 
 ## July 14, 2026
 
