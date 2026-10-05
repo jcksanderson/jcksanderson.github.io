@@ -3,6 +3,12 @@ title: "current thoughts"
 layout: "custom"
 ---
 
+## October 5, 2026
+
+You might be able to mildly improve your quality of life by using more sacrificial barriers. We already do this with items like screen protectors, pillowcases, and garbage bags, but we can actually take the last two further: pillowcases and garbage bags have essentially no influence on the effectiveness of pillows and garbage bins, so why not use two of them at once? That way, if the outer cover gets dirty/rips/etc., any mess is caught by the inner cover---which is easy to clean or replace---not the hard-to-clean item the covers protect.
+
+
+
 ## September 30, 2026
 
 
