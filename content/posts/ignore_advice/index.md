@@ -1,7 +1,7 @@
 ---
 title: "Should you ignore any advice you hear?"
 summary: "Maybe."
-date: 2026-09-26
+date: 2026-10-07
 showdate: true
 ---
 
