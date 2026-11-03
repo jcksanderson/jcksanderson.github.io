@@ -316,7 +316,7 @@
   showPreroll();
 
   /* ---------- pop-ups ---------- */
-  const popups = $('#popups');
+  const wins = $('#wins');
   const CAP = Infinity; // they keep coming
   let spawned = 0;
   let stopped = false;
@@ -325,7 +325,7 @@
   const POPUPS = {
     prize: () => ({
       title: 'WINNER!!! — Internet Explorer',
-      body: [el('p', { class: 'popup-big', text: 'YOU HAVE WON' }), el('p', { text: 'One (1) free stick of dynamite. Shipping not included. Hands must be up to claim.' })],
+      body: [el('p', { class: 'win-big', text: 'YOU HAVE WON' }), el('p', { text: 'One (1) free stick of dynamite. Shipping not included. Hands must be up to claim.' })],
       buttons: [['CLAIM NOW', 'primary', () => spawn('video')], ['No thanks, I hate free things', '', null]],
     }),
     message: () => ({
@@ -359,7 +359,7 @@
     }),
     newsletter: () => ({
       title: 'Before you go…',
-      body: [el('p', { class: 'popup-big', text: 'DON’T MISS AN EXPLOSION' }), el('p', { text: 'Get every explosion delivered straight to your inbox, hourly.' })],
+      body: [el('p', { class: 'win-big', text: 'DON’T MISS AN EXPLOSION' }), el('p', { text: 'Get every explosion delivered straight to your inbox, hourly.' })],
       buttons: [['Sign me up', 'primary', () => spawn('message')], ['No, I prefer to miss explosions', '', null]],
     }),
   };
@@ -369,7 +369,7 @@
 
   function spawn(kind = 'any', { quiet = false } = {}) {
     if (stopped || spawned >= CAP) return null;
-    const open = $$('.popup', popups);
+    const open = $$('.win', wins);
     if (open.length >= maxOnScreen()) open[0].remove(); // oldest gets bumped
     spawned += 1;
 
@@ -377,10 +377,10 @@
     const id = `pop-${spawned}`;
     const close = el('button', { class: 'x', type: 'button', 'aria-label': `Close pop-up: ${spec.title}`, text: '✕' });
     const mini = el('button', { type: 'button', 'aria-label': 'Minimize (premium feature)', text: '_' });
-    const box = el('section', { class: 'popup', role: 'dialog', 'aria-modal': 'false', 'aria-labelledby': id },
-      el('div', { class: 'popup-bar' }, el('h2', { id, text: spec.title }), mini, close),
-      el('div', { class: 'popup-body' }, ...spec.body,
-        spec.buttons.length ? el('div', { class: 'popup-btns' }, ...spec.buttons.map(([label, cls, then]) =>
+    const box = el('section', { class: 'win', role: 'dialog', 'aria-modal': 'false', 'aria-labelledby': id },
+      el('div', { class: 'win-bar' }, el('h2', { id, text: spec.title }), mini, close),
+      el('div', { class: 'win-body' }, ...spec.body,
+        spec.buttons.length ? el('div', { class: 'win-btns' }, ...spec.buttons.map(([label, cls, then]) =>
           el('button', { type: 'button', class: cls, text: label, onclick: () => { dismiss(box, false); if (then) then(); } }))) : null));
 
     // Place it somewhere annoying: biased toward the middle of the viewport.
@@ -395,7 +395,7 @@
     close.addEventListener('click', () => dismiss(box, true));
     mini.addEventListener('click', () => { dismiss(box, false); spawn('any'); announce('Minimizing is a premium feature. Here is another pop-up.'); });
 
-    popups.append(box);
+    wins.append(box);
     // Timed pop-ups stay silent so screen readers aren't flooded; ones caused by the visitor are announced.
     if (!quiet) announce(`Pop-up opened: ${spec.title}. Press Escape to close.`);
     return box;
@@ -403,7 +403,7 @@
 
   function dismiss(box, hydra) {
     box.remove();
-    const rest = $$('.popup', popups);
+    const rest = $$('.win', wins);
     const next = rest[rest.length - 1];
     if (next) $('.x', next).focus({ preventScroll: true });
     // The hydra: closing one usually spawns another, until the cap.
@@ -417,13 +417,13 @@
   function stopEverything() {
     stopped = true;
     clearTimeout(spawnTimer);
-    popups.replaceChildren();
-    ['notif', 'cookie', 'sticky'].forEach((i) => { $('#' + i).hidden = true; });
+    wins.replaceChildren();
+    ['bell', 'biscuit', 'corner'].forEach((i) => { $('#' + i).hidden = true; });
   }
 
   document.addEventListener('keydown', (e) => {
     if (e.key !== 'Escape') return;
-    const open = $$('.popup', popups);
+    const open = $$('.win', wins);
     if (open.length) { e.preventDefault(); dismiss(open[open.length - 1], true); }
   });
 
@@ -451,34 +451,34 @@
     }, gap + Math.random() * 1500);
   }
 
-  /* ---------- notification prompt, cookie banner, sticky ad ---------- */
-  const notif = $('#notif'), cookie = $('#cookie'), sticky = $('#sticky');
+  /* ---------- notification prompt, biscuit banner, corner ad ---------- */
+  const bell = $('#bell'), biscuit = $('#biscuit'), corner = $('#corner');
 
-  $$('[data-notif]', notif).forEach((b) => b.addEventListener('click', () => {
-    notif.hidden = true;
-    if (b.dataset.notif === 'allow') spawn('message');
+  $$('[data-bell]', bell).forEach((b) => b.addEventListener('click', () => {
+    bell.hidden = true;
+    if (b.dataset.bell === 'allow') spawn('message');
     else { const p = spawn('any'); if (p) $('h2', p).textContent = 'Notifications blocked (notification)'; }
   }));
 
-  $$('[data-cookie]', cookie).forEach((b) => b.addEventListener('click', () => {
-    cookie.hidden = true;
-    if (b.dataset.cookie === 'manage') {
+  $$('[data-biscuit]', biscuit).forEach((b) => b.addEventListener('click', () => {
+    biscuit.hidden = true;
+    if (b.dataset.biscuit === 'manage') {
       const p = spawn('adblock');
       if (p) { $('h2', p).textContent = 'Preferences saved (Accept all)'; }
     }
-    setTimeout(() => { if (!stopped) sticky.hidden = false; }, 2500);
+    setTimeout(() => { if (!stopped) corner.hidden = false; }, 2500);
   }));
 
-  $('#stickyClose').addEventListener('click', () => {
-    const body = $('.sticky-body', sticky);
+  $('#cornerClose').addEventListener('click', () => {
+    const body = $('.corner-body', corner);
     if (body.dataset.confirm) return;
     body.dataset.confirm = '1';
     const saved = [...body.childNodes];
     const yes = el('button', { type: 'button', class: 'primary', text: 'No, show me more ads' });
     const no = el('button', { type: 'button', text: 'Yes, close' });
-    body.replaceChildren(el('div', { class: 'sticky-confirm' }, el('p', { text: 'Are you sure you want to close this ad?' }), el('div', { class: 'popup-btns' }, yes, no)));
+    body.replaceChildren(el('div', { class: 'corner-confirm' }, el('p', { text: 'Are you sure you want to close this ad?' }), el('div', { class: 'win-btns' }, yes, no)));
     yes.addEventListener('click', () => { body.replaceChildren(...saved); delete body.dataset.confirm; spawn('video'); });
-    no.addEventListener('click', () => { sticky.hidden = true; });
+    no.addEventListener('click', () => { corner.hidden = true; });
     yes.focus();
   });
 
@@ -491,10 +491,10 @@
     announce('All ads stopped. Dynamite is ready. Press the play button.');
   }
   $('#skip').addEventListener('click', goStraightToDynamite);
-  $('#adfree').addEventListener('click', goStraightToDynamite);
+  $('#freeexp').addEventListener('click', goStraightToDynamite);
 
   /* ---------- kick off ---------- */
-  setTimeout(() => { if (!stopped) cookie.hidden = false; }, 900);
-  setTimeout(() => { if (!stopped) notif.hidden = false; }, 1800);
+  setTimeout(() => { if (!stopped) biscuit.hidden = false; }, 900);
+  setTimeout(() => { if (!stopped) bell.hidden = false; }, 1800);
   setTimeout(() => { spawn('prize'); schedule(); }, 3200);
 })();
