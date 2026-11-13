@@ -4,7 +4,7 @@ layout: "custom"
 ---
 
 ## November 13, 2026
-Some preregistered predictions:
+Some predictions:
 1. Current LLMs don't have the juice (i.e., barring a major algorithmic advancement---which I think we are likely not to see---there will not be an intelligence explosion in 2027)
 2. AI will prove/disprove the Riemann hypothesis by the end of 2027
 
