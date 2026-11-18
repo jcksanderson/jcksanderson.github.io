@@ -120,6 +120,11 @@ html {
   margin-bottom: 0.25em;
 }
 
+/* a bit more room between paragraphs on the home page only (content/_index.md) */
+.prose .home-intro p {
+  margin-bottom: 0.75em;
+}
+
 /* less space between the actual bullets of bullet lists */
 .prose ul li,
 .prose ol li {
