@@ -1,3 +1,2 @@
 User-agent: *
-Allow: /
-Sitemap: https://jcksanderson.com/sitemap.xml
+Disallow: /
